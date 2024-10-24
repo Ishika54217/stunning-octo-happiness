@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import productsImage from '../assets/images/products.jpg';
+import productsImage from '../assets/images/products.png';
 
 function ProductsPage() {
   const [imageLoaded, setImageLoaded] = useState(false);
