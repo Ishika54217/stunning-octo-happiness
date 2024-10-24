@@ -1,4 +1,5 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
+import productsImage from '../assets/images/products.jpg';
 
 function ProductsPage() {
   const [imageLoaded, setImageLoaded] = useState(false);
@@ -12,10 +13,10 @@ function ProductsPage() {
         <div className="products__content">
           <div className="products__image-container">
             <img 
-              src="/assets/images/products.jpg"
+              src={productsImage}
               alt="Hayday Products"
               className={`products__image ${imageLoaded ? 'loaded' : ''}`}
-              onClick={() => window.open('/assets/images/products.jpg', '_blank')}
+              onClick={() => window.open(productsImage, '_blank')}
               onLoad={() => setImageLoaded(true)}
             />
           </div>
